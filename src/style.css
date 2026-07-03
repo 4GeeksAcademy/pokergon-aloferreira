@@ -1,5 +1,30 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+
+
+body { background: green; }
+.centered { margin-left: auto; margin-right: auto; width: 300px; }
+
+
+.card {
+  width: 300px;
+  height: 440px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
+.card p {
+  font: 150px/440px Arial, serif;
+  text-align: center;
+}
+
+
+div[class*="suit-"]:before { font-size: 90px; position: absolute; top: 8px; left: 20px; }
+div[class*="suit-"]:after { font-size: 90px; position: absolute; bottom: 8px; right: 20px; transform: rotate(180deg); }
+
+
+.suit-hearts:before, .suit-hearts:after { content: "♥"; color: red; }
+.suit-diamonds:before, .suit-diamonds:after { content: "♦"; color: red; }
+.suit-spades:before, .suit-spades:after { content: "♠"; color: black; }
+.suit-clubs:before, .suit-clubs:after { content: "♣"; color: black; }
